@@ -46,7 +46,6 @@ var htmlFileLoader = function(file) {
 
 var urlFileLoader = function(url) {
   return function(callback) {
-    console.log('fetching ' + url);
     rest.get(url).on('complete', callback);
   }
 };
